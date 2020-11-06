@@ -2,6 +2,9 @@
 # of things then we can use travis for that.
 
 language: bash
+arch:
+  -arm64
+
 
 services:
   - docker
