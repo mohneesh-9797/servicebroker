@@ -2,10 +2,10 @@
 # of things then we can use travis for that.
 
 language: bash
-arch: arm64-graviton2
 virt: vm
 dist: focal
 group: edge
+arch: arm64-graviton2
 
 
 services:
