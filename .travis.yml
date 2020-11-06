@@ -2,12 +2,7 @@
 # of things then we can use travis for that.
 
 language: bash
-virt: vm
-dist: focal
-group: edge
-arch: arm64-graviton2
-
-
+arch: arm64
 services:
   - docker
 
