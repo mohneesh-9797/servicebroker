@@ -42,9 +42,9 @@ echo Verify spaces after periods
 "${REPODIR}/tools/verify-spaces.sh" -v "${REPODIR}"/spec.md "${REPODIR}"/profile.md "${REPODIR}"/compatibility.md || rc=1
 
 echo Verify OpenAPI
-docker run --rm -v "${REPODIR}":/local abhisheknishant/generator_cli2:v4.2.3 validate -i /local/openapi.yaml || rc=1
+docker run --rm -v "${REPODIR}":/local abhisheknishant/generator_amd:v4.2.3 validate -i /local/openapi.yaml || rc=1
 
 echo Verify Swagger
-docker run --rm -v "${REPODIR}":/local abhisheknishant/generator_cli2:v4.2.3 validate -i /local/swagger.yaml || rc=1
+docker run --rm -v "${REPODIR}":/local abhisheknishant/generator_amd:v4.2.3 validate -i /local/swagger.yaml || rc=1
 
 exit $rc
